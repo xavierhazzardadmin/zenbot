@@ -1,3 +1,5 @@
+github.com/aiomonitors/godiscord v0.0.0-20200422003858-41242d4e5847 h1:Yxc0g65+HtqHRHCTv+Pij/BCznlcrW5YHySEFKuz8fU=
+github.com/aiomonitors/godiscord v0.0.0-20200422003858-41242d4e5847/go.mod h1:LXgHQsyfPhr3tpaib4yKCX7vaeSlAZSHfbb02DvXw5g=
 github.com/bwmarrin/discordgo v0.27.1 h1:ib9AIc/dom1E/fSIulrBwnez0CToJE113ZGt4HoliGY=
 github.com/bwmarrin/discordgo v0.27.1/go.mod h1:NJZpH+1AfhIcyQsPeuBKsUtYrRnjkyu0kIVMCHkZtRY=
 github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc=
