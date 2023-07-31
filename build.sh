@@ -1,6 +1,6 @@
 #!/bin/bash
 systemctl stop zenbot
 
-sudo go build -O /bin/zenbot/zenbot
+sudo go build -o /bin/zenbot/zenbot
 
 systemctl start zenbot
