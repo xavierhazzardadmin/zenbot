@@ -1,7 +1,6 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"os"
 	"os/signal"
@@ -20,8 +19,7 @@ var lock bool = false
 const MYID string = "385922547591675905"
 
 func init() {
-	flag.StringVar(&Token, "t", "", "Bot Token")
-	flag.Parse()
+	Token = os.Getenv("DISCORD_TOKEN")
 }
 
 func main() {
