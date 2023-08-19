@@ -20,7 +20,7 @@ WORKDIR /
 
 COPY --from=BuildStage /zenbot /zenbot
 
-USER nonroot:nonroot
+RUN echo "Discord token: $DISCORD_TOKEN"
 
 ENTRYPOINT ["/zenbot"]
 
