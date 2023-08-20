@@ -10,8 +10,6 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN echo ${DISCORD_TOKEN}
-
 RUN CGO_ENABLED=0 GOOS=linux go build -o /zenbot
 
 CMD ["/zenbot"]
