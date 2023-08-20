@@ -20,13 +20,9 @@ const MYID string = "385922547591675905"
 
 func init() {
 	Token = os.Getenv("DISCORD_TOKEN")
-	fmt.Printf("Token: %s\n", Token)
 }
 
 func main() {
-	Token = os.Getenv("DISCORD_TOKEN")
-	fmt.Printf("Token: %s\n", Token)
-	
 	bot, err := discordgo.New("Bot " + Token)
 
 	if err != nil {
