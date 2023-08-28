@@ -99,7 +99,7 @@ func generateRandomIdea() string {
 
 	var control string
 
-	if control1 == 1 {
+	if control1 == 0 {
 		control2 := rand.Intn(len(games))
 
 		control = fmt.Sprintf("Why don't you play %s\n", games[control2])
