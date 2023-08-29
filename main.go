@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/bwmarrin/discordgo"
+	"github.com/joho/godotenv"
 )
 
 var (
@@ -21,6 +22,11 @@ var lock bool = false
 const MYID string = "385922547591675905"
 
 func init() {
+	err := godotenv.Load("token.env")
+	if err != nil {
+		Token = os.Getenv("DISCORD_TOKEN")
+	}
+
 	Token = os.Getenv("DISCORD_TOKEN")
 }
 

@@ -21,3 +21,4 @@
 go.work
 #Executable files
 zenbot
+token.env
