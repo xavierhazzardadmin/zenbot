@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
 	"os/signal"
 	"strings"
 	"syscall"
-	"math/rand"
+	"time"
 
 	"github.com/bwmarrin/discordgo"
 )
@@ -95,7 +96,9 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func generateRandomIdea() string {
 	games := []string{"Brick Rigs", "Minecraft Java", "Forza Horizon 4", "Forza Horizon 5", "Minecraft Bedrock", "No Man's Sky", "Gang Beast", "Roblox", "Rocket League", "Fall Guys", "Among Us"}
 	ideas := []string{"Go Touch Grass", "Learn to cook", "Read a book", "Work out", "Watch Youtube", "Learn something new"}
-	control1 := rand.Intn(1)
+
+	rand.Seed(time.Now().UnixNano())
+	control1 := rand.Intn(2)
 
 	var control string
 
@@ -105,7 +108,7 @@ func generateRandomIdea() string {
 		control = fmt.Sprintf("Why don't you play %s\n", games[control2])
 	} else {
 		control2 := rand.Intn(len(ideas))
-		
+
 		control = fmt.Sprintf("Why don't you %s\n", ideas[control2])
 	}
 
