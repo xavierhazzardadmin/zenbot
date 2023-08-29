@@ -95,7 +95,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 func generateRandomIdea() string {
 	games := []string{"Brick Rigs", "Minecraft Java", "Forza Horizon 4", "Forza Horizon 5", "Minecraft Bedrock", "No Man's Sky", "Gang Beast", "Roblox", "Rocket League", "Fall Guys", "Among Us"}
-	ideas := []string{"Go Touch Grass", "Learn to cook", "Read a book", "Work out", "Watch Youtube", "Learn something new"}
+	ideas := []string{"go touch grass", "learn to cook", "read a book", "work out", "watch youtube", "learn something new"}
 
 	rand.Seed(time.Now().UnixNano())
 	control1 := rand.Intn(2)
